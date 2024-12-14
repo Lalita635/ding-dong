@@ -15,7 +15,7 @@ h1 {
 }
 
 .hero {
-    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background: url('img/fondo.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh; /* Esto asegura que la imagen ocupe toda la altura de la ventana */
     padding-top: 1px;
