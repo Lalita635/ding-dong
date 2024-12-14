@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    background-color: #f4f4f4;
+    color: aqua;
+}
+
+h1 {
+    color:rgba(255, 255, 255, 0.945);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.hero {
+    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Esto asegura que la imagen ocupe toda la altura de la ventana */
+    padding-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100%; /* Se asegura que ocupe todo el ancho */
+}
+
+.content {
+    padding: 20px;
+}
+
+.button-group {
+    display: flex; /* Usar Flexbox para alinear botones en fila */
+    justify-content: center; /* Centrar los botones en la fila */
+    margin-bottom: 15px; /* Espaciado inferior entre grupos de botones */
+}
+
+.button-group button {
+    margin-right: 15px; /* Espaciado entre botones en la misma fila */
+}
+
+.button-group button:last-child {
+    margin-right: 0; /* Eliminar margen derecho del último botón */
+}
+
+button {
+    background-color:rgba(127, 255, 212, 0.247);
+    border: 2px solid #35424a; /* Borde del botón */
+    color: #000000 !important; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    width: 100%; /* Hacer que los botones ocupen el 100% del ancho */
+    max-width: 150px; /* Máximo ancho para los botones */
+    margin-bottom: 15px; /* Espaciado entre los botones */
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(53, 66, 74, 0.1);  /*Fondo ligeramente oscuro al pasar el ratón*/
+    /* color: #ffffff; Color del texto al pasar el ratón */
+    content: "";
+    top: 0;
+    left: 0;
+    background-size: 10%;
+    border-radius: 12px;
+    filter: blur(0.2px);
+    animation: glowing 20s linear infinite;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-style: italic;
+}
+
+a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: #000000; /* Color del texto del enlace */
+    font-weight: bold;
+}
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
